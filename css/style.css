@@ -1,0 +1,86 @@
+/* Basic Styles */
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Featured Product Section */
+.featured-product {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 100%;
+    max-width: 350px;
+    text-align: center;
+}
+
+.product-image {
+    overflow: hidden;
+}
+
+.product-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.3s ease; /* For hover effect */
+}
+
+/* Bonus: Hover effect on the product image */
+.product-image:hover img {
+    transform: scale(1.1);
+}
+
+.product-details {
+    padding: 20px;
+}
+
+.product-name {
+    font-size: 1.5em;
+    margin: 0 0 10px;
+}
+
+.product-price {
+    font-size: 1.2em;
+    color: #888;
+    margin: 0 0 20px;
+}
+
+.buy-now-button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 12px 24px;
+    font-size: 1em;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.buy-now-button:hover {
+    background-color: #0056b3;
+}
+
+/* Responsive Design */
+@media (min-width: 768px) {
+    .featured-product {
+        display: flex;
+        max-width: 800px;
+        text-align: left;
+    }
+
+    .product-image {
+        flex: 1;
+    }
+
+    .product-details {
+        flex: 1;
+        padding: 40px;
+    }
+}
